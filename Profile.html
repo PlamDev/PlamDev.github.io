@@ -1,33 +1,26 @@
+/body>
+
+</html>
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initia<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>l-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlamDev</title>
-
+    <link rel="stylesheet" href="animation.css">
     <style>
-
         body {
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
         }
-
-
-
+        
         header {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
-
-
-
+        
         h1 {
             font-size: 32px;
             margin: 0;
@@ -38,146 +31,98 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
-
-
+        
         main {
             padding: 20px;
         }
-
-
-
+        
         h2 {
             color: #333;
             font-size: margin-bottom: 10px;
         }
-
-
-
+        
         p {
             color: #666;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.5;
         }
-
-
-
+        
         .contact-info {
             background-color: #f9f9f9;
             padding: 20px;
             margin-bottom: 20px;
+            animation: slidein 1s;
         }
-
-
-
+        
         .about-me {
             background-color: #fff;
             padding: 20px;
             margin-bottom: 20px;
+            animation: slidein 1s;
         }
-
-
-
+        
         .portfolio {
             background-color: #f9f9f9;
             padding: 20px;
             margin-bottom: 20px;
+            animation: slidein 1s;
         }
-
-
-
-        .copyright {
+        
+        .animated-text {
+            animation: slidein 1s;
+        }
+        
+        @keyframes slidein {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        footer {
             background-color: #333;
             color: #fff;
             padding: 5px;
             text-align: center;
             font-size: 14px;
         }
-
-
-
-        @keyframes slidein {
-
-            from {
-                opacity: 0;
-                transform: translateX(-100%);
-            }
-
-
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-
-
-        .animated-text {
-            animation: slidein 1s;
-        }
     </style>
-
 </head>
-
 <body>
-
     <header>
-
         <h1>PERSONAL DETAILS</h1>
-
     </header>
 
-
-
     <main>
-
-        <div class="contact-info">
-
-            <h2>&#128590About me</h2>
-
-            <p>Full name:Nguyễn Duy Phúc Lâm</p>
-            <p>Date of birth : 28/01/2008</p>
-            <p>
-
-
+        <div class="contact-info animated-text">
+            <h2>&#128590; About me</h2>
+            <p>Full name: Nguyễn Duy Phúc Lâm</p>
+            <p>Date of birth: 28/01/2008</p>
         </div>
 
-
-
-        <div class="about-me">
-
-            <h2>&#x1F310;Contact information</h2>
-            <p>Phone number: 0814918257
+        <div class="about-me animated-text">
+            <h2>&#x1F310; Contact information</h2>
+            <p>Phone number: 0814918257</p>
             <p>Email: nguyenphuclam112255@gmail.com</p>
-            <p>Address: Phu Vang ,Thua Thien Hue, Viet Nam.
+            <p>Address: Phu Vang, Thua Thien Hue, Viet Nam.</p>
         </div>
 
-
-
-        <div class="portfolio">
-
-            <h2>&#x1F3C5;Interests and Achievements</h2>
-
-            <p>On top 20 HUE-ICT CHALLENGE - 2023 ,Won the exam for excellent students in informatics,certificate MOS</p>
-            <p>
-
+        <div class="portfolio animated-text">
+            <h2>&#x1F3C5; Interests and Achievements</h2>
+            <p>On top 20 HUE-ICT CHALLENGE - 2023</p>
+            <p>Won the exam for excellent students in informatics</p>
+            <p>Certificate MOS</p>
         </div>
-
     </main>
 
-
-
     <footer>
-
         <div class="copyright">
-
             &copy; 2023
-
         </div>
-
     </footer>
-
 </body>
-
 </html>
