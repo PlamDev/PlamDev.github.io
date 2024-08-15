@@ -1,0 +1,25 @@
+.contact-info, .about-me, .portfolio {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: slidein 1s;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-info:hover, .about-me:hover, .portfolio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #e0e0e0;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
